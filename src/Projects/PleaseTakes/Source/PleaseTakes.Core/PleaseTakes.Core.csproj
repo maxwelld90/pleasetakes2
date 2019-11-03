@@ -1,0 +1,219 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{CB969F21-E409-4A21-B664-504B5F93D8CA}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>PleaseTakes</RootNamespace>
+    <AssemblyName>PleaseTakes.Core</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ApplicationIcon>AssemblyIcon.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="PleaseTakes.Cover, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\PleaseTakes.Cover.dll</HintPath>
+    </Reference>
+    <Reference Include="PleaseTakes.UserManagement, Version=2.0.3874.18605, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\PleaseTakes.UserManagement.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Source\AssemblyDetails.cs" />
+    <Compile Include="Source\BasicResponses\Account\PasswordChange.cs" />
+    <Compile Include="Source\BasicResponses\Account\Redirector.cs" />
+    <Compile Include="Source\BasicResponses\Account\Standard.cs" />
+    <Compile Include="Source\BasicResponses\Exception\Redirector.cs" />
+    <Compile Include="Source\BasicResponses\Exception\ResourceNotFound.cs" />
+    <Compile Include="Source\BasicResponses\Exception\Unhandled.cs" />
+    <Compile Include="Source\BasicResponses\Home\Handler.cs" />
+    <Compile Include="Source\BasicResponses\Login\Action.cs" />
+    <Compile Include="Source\BasicResponses\Login\Handler.cs" />
+    <Compile Include="Source\BasicResponses\Login\Redirector.cs" />
+    <Compile Include="Source\BasicResponses\Login\UpdateRecord.cs" />
+    <Compile Include="Source\BasicResponses\Printable.cs" />
+    <Compile Include="Source\BasicResponses\Test.cs" />
+    <Compile Include="Source\Consts.cs" />
+    <Compile Include="Source\Exceptions.cs" />
+    <Compile Include="Source\Helpers\BaseHandlers\BaseHandler.cs" />
+    <Compile Include="Source\Helpers\BaseHandlers\AjaxHandler.cs" />
+    <Compile Include="Source\Helpers\BaseHandlers\QuoteHandler.cs" />
+    <Compile Include="Source\Helpers\BaseHandlers\StandardHandler.cs" />
+    <Compile Include="Source\Helpers\BaseHandlers\TemplateTypes.cs" />
+    <Compile Include="Source\Helpers\Constructor.cs" />
+    <Compile Include="Source\Helpers\Elements\Ajax\Element.cs" />
+    <Compile Include="Source\Helpers\Elements\Ajax\Alerts.cs" />
+    <Compile Include="Source\Helpers\Elements\Ajax\Xml\Collection.cs" />
+    <Compile Include="Source\Helpers\Elements\Ajax\Xml\Element.cs" />
+    <Compile Include="Source\Helpers\Elements\Alerts\Alert.cs" />
+    <Compile Include="Source\Helpers\Elements\Alerts\Collection.cs" />
+    <Compile Include="Source\Helpers\Elements\Alerts\Colours.cs" />
+    <Compile Include="Source\Helpers\Elements\Breadcrumbs\Breadcrumb.cs" />
+    <Compile Include="Source\Helpers\Elements\Breadcrumbs\Trail.cs" />
+    <Compile Include="Source\Helpers\Elements\CollectionBase.cs" />
+    <Compile Include="Source\Helpers\Elements\CoverSlips\Collection.cs" />
+    <Compile Include="Source\Helpers\Elements\CoverSlips\ClassDetails.cs" />
+    <Compile Include="Source\Helpers\Elements\CoverSlips\StaffDetails.cs" />
+    <Compile Include="Source\Helpers\Elements\CoverSlips\Slip.cs" />
+    <Compile Include="Source\Helpers\Elements\DataGrids\Calendar\Calendar.cs" />
+    <Compile Include="Source\Helpers\Elements\DataGrids\Calendar\CalendarEvents.cs" />
+    <Compile Include="Source\Helpers\Elements\DataGrids\Cell.cs" />
+    <Compile Include="Source\Helpers\Elements\DataGrids\CellColours.cs" />
+    <Compile Include="Source\Helpers\Elements\DataGrids\CellTypes.cs" />
+    <Compile Include="Source\Helpers\Elements\DataGrids\Summary\GenericCellsCollection.cs" />
+    <Compile Include="Source\Helpers\Elements\DataGrids\Summary\SelectedStaff.cs" />
+    <Compile Include="Source\Helpers\Elements\DataGrids\Summary\StaffMember.cs" />
+    <Compile Include="Source\Helpers\Elements\DataGrids\Summary\Summary.cs" />
+    <Compile Include="Source\Helpers\Elements\DataGrids\Summary\SummaryCellTypes.cs" />
+    <Compile Include="Source\Helpers\Elements\DataGrids\Timetables\StaffTimetableEvents.cs" />
+    <Compile Include="Source\Helpers\Elements\DataGrids\Timetables\Timetable.cs" />
+    <Compile Include="Source\Helpers\Elements\DataGrids\Timetables\StaffTimetable.cs" />
+    <Compile Include="Source\Helpers\Elements\DataGrids\TopControlCollection.cs" />
+    <Compile Include="Source\Helpers\Elements\DataGrids\TopControl.cs" />
+    <Compile Include="Source\Helpers\Elements\DataGrids\TopControlPositions.cs" />
+    <Compile Include="Source\Helpers\Elements\DataGrids\DataGrid.cs" />
+    <Compile Include="Source\Helpers\Elements\DataGrids\Row.cs" />
+    <Compile Include="Source\Helpers\Elements\DataGrids\Rows.cs" />
+    <Compile Include="Source\Helpers\Elements\Forms\ButtonType.cs" />
+    <Compile Include="Source\Helpers\Elements\Forms\Button.cs" />
+    <Compile Include="Source\Helpers\Elements\Forms\BasicForm.cs" />
+    <Compile Include="Source\Helpers\Elements\Forms\RadioGroup.cs" />
+    <Compile Include="Source\Helpers\Elements\Forms\RadioButton.cs" />
+    <Compile Include="Source\Helpers\Elements\Forms\IRowAdders.cs" />
+    <Compile Include="Source\Helpers\Elements\Forms\GroupTitleImageDetails.cs" />
+    <Compile Include="Source\Helpers\Elements\Forms\GroupTitleDetails.cs" />
+    <Compile Include="Source\Helpers\Elements\Forms\Group.cs" />
+    <Compile Include="Source\Helpers\Elements\Forms\GroupedForm.cs" />
+    <Compile Include="Source\Helpers\Elements\Forms\Form.cs" />
+    <Compile Include="Source\Helpers\Elements\Forms\HiddenField.cs" />
+    <Compile Include="Source\Helpers\Elements\Forms\TextField.cs" />
+    <Compile Include="Source\Helpers\Elements\Forms\FormElement.cs" />
+    <Compile Include="Source\Helpers\Elements\Forms\Row.cs" />
+    <Compile Include="Source\Helpers\Elements\HeaderTags\Attribute.cs" />
+    <Compile Include="Source\Helpers\Elements\HeaderTags\Collection.cs" />
+    <Compile Include="Source\Helpers\Elements\HeaderTags\Conditionals.cs" />
+    <Compile Include="Source\Helpers\Elements\HeaderTags\Meta.cs" />
+    <Compile Include="Source\Helpers\Elements\HeaderTags\Script.cs" />
+    <Compile Include="Source\Helpers\Elements\HeaderTags\Stylesheet.cs" />
+    <Compile Include="Source\Helpers\Elements\HeaderTags\Tag.cs" />
+    <Compile Include="Source\Helpers\Elements\HeaderTags\Title.cs" />
+    <Compile Include="Source\Helpers\Elements\Menu90\Collection.cs" />
+    <Compile Include="Source\Helpers\Elements\Menu90\Link.cs" />
+    <Compile Include="Source\Helpers\Elements\MenuBar\Bar.cs" />
+    <Compile Include="Source\Helpers\Elements\MenuBar\Button.cs" />
+    <Compile Include="Source\Helpers\Elements\RecordLists\Colours.cs" />
+    <Compile Include="Source\Helpers\Elements\RecordLists\Collection.cs" />
+    <Compile Include="Source\Helpers\Elements\RecordLists\Record.cs" />
+    <Compile Include="Source\Helpers\Elements\RecordLists\Image.cs" />
+    <Compile Include="Source\Helpers\Elements\RecordLists\Side.cs" />
+    <Compile Include="Source\Helpers\Elements\RightMenu\Collection.cs" />
+    <Compile Include="Source\Helpers\Elements\RightMenu\Link.cs" />
+    <Compile Include="Source\Helpers\Elements\Search\Button.cs" />
+    <Compile Include="Source\Helpers\Elements\Search\Collection.cs" />
+    <Compile Include="Source\Helpers\Elements\Search\CustomField.cs" />
+    <Compile Include="Source\Helpers\Elements\Search\SearchArea.cs" />
+    <Compile Include="Source\Helpers\Elements\Tabs\Collection.cs" />
+    <Compile Include="Source\Helpers\Elements\Tabs\Tab.cs" />
+    <Compile Include="Source\Helpers\Elements\TopRight\Area.cs" />
+    <Compile Include="Source\Helpers\Elements\TopRight\Types.cs" />
+    <Compile Include="Source\Helpers\Redirector.cs" />
+    <Compile Include="Source\Helpers\Database\ParameterBuilder.cs" />
+    <Compile Include="Source\Helpers\Database\Provider.cs" />
+    <Compile Include="Source\Helpers\InitialisationMethods.cs" />
+    <Compile Include="Source\Helpers\Path\Parser.cs" />
+    <Compile Include="Source\Helpers\Resource.cs" />
+    <Compile Include="Source\Helpers\SettingsBase.cs" />
+    <Compile Include="Source\Helpers\Xml\Formatting.cs" />
+    <Compile Include="Source\Helpers\Xml\Parser.cs" />
+    <Compile Include="Source\Helpers\Xml\Validator.cs" />
+    <Compile Include="Source\Landing.cs" />
+    <Compile Include="Source\Output\BinaryResource.cs" />
+    <Compile Include="Source\Output\OutputBase.cs" />
+    <Compile Include="Source\Output\StringBase.cs" />
+    <Compile Include="Source\Output\StringResource.cs" />
+    <Compile Include="Source\Output\Page.cs" />
+    <Compile Include="Source\Persistence\Application.cs" />
+    <Compile Include="Source\Persistence\PersistenceBase.cs" />
+    <Compile Include="Source\Persistence\Session.cs" />
+    <Compile Include="Source\Persistence\SettingsCollection\Application\Defaults.cs" />
+    <Compile Include="Source\Persistence\SettingsCollection\Base.cs" />
+    <Compile Include="Source\Schools\Collection.cs" />
+    <Compile Include="Source\Schools\Exceptions.cs" />
+    <Compile Include="Source\Schools\School.cs" />
+    <Compile Include="Source\Schools\SettingsCollections\Application\BaseCollection.cs" />
+    <Compile Include="Source\Schools\SettingsCollections\Application\Database.cs" />
+    <Compile Include="Source\Schools\SettingsCollections\Application\Session.cs" />
+    <Compile Include="Source\Schools\SettingsCollections\BaseCollection.cs" />
+    <Compile Include="Source\Schools\SettingsCollections\NonTeachingAccounts\BaseCollection.cs" />
+    <Compile Include="Source\Schools\SettingsCollections\SchoolSettingsBase.cs" />
+    <Compile Include="Source\Schools\SettingsCollections\Timetabling\BaseCollection.cs" />
+    <Compile Include="Source\Schools\SettingsCollections\Timetabling\Layout\BaseCollection.cs" />
+    <Compile Include="Source\Schools\SettingsCollections\Timetabling\Layout\Week.cs" />
+    <Compile Include="Source\Schools\SettingsCollections\Timetabling\Session\BaseCollection.cs" />
+    <Compile Include="Source\Schools\SettingsCollections\Timetabling\Session\CurrentSession.cs" />
+    <Compile Include="Source\Schools\SettingsCollections\Timetabling\Session\SessionDate.cs" />
+    <Compile Include="Source\Utils.cs" />
+    <Compile Include="Source\Validation\ArgumentWrapper.cs" />
+    <Compile Include="Source\Validation\Extensions.cs" />
+    <Compile Include="Source\Validation\IntExtensions.cs" />
+    <Compile Include="Source\Validation\Specific\Account.cs" />
+    <Compile Include="Source\Validation\Specific\Settings.cs" />
+    <Compile Include="Source\Validation\StringExtensions.cs" />
+    <Compile Include="Source\WebServer.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="AssemblyIcon.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\PleaseTakes.Resources\PleaseTakes.Resources.csproj">
+      <Project>{AF1357BF-AB10-41BE-9128-022170637990}</Project>
+      <Name>PleaseTakes.Resources</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

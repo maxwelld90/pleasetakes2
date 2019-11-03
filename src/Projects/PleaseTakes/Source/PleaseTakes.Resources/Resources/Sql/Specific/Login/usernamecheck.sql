@@ -1,0 +1,1 @@
+﻿SELECT * FROM Accounts WHERE Username = @Username;

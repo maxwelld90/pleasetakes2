@@ -1,0 +1,451 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{AF1357BF-AB10-41BE-9128-022170637990}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>PleaseTakes</RootNamespace>
+    <AssemblyName>PleaseTakes.Resources</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ApplicationIcon>AssemblyIcon.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Templates\Elements\Topright\login.html" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Source\AssemblyDetails.cs" />
+    <EmbeddedResource Include="Resources\Templates\Elements\schoolname.html" />
+    <EmbeddedResource Include="Resources\Templates\Elements\Alerts\closebox.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="AssemblyIcon.ico" />
+    <EmbeddedResource Include="Resources\Alerts\Specific\Staff\Modify\Teaching\Timetable\timetableexists.html" />
+    <EmbeddedResource Include="Resources\Alerts\Specific\Staff\Modify\Teaching\Timetable\badstaffid.html" />
+    <EmbeddedResource Include="Resources\Alerts\Specific\Staff\Modify\Teaching\Name\new.html" />
+    <EmbeddedResource Include="Resources\Images\Search\add.png" />
+    <EmbeddedResource Include="Resources\Alerts\Specific\Staff\Modify\Teaching\Account\loggedin.html" />
+    <EmbeddedResource Include="Resources\Alerts\Specific\Staff\Modify\Teaching\Account\resetnoaccount.html" />
+    <EmbeddedResource Include="Resources\Alerts\Specific\Staff\Modify\Teaching\Account\resetsuccess.html" />
+    <EmbeddedResource Include="Resources\Alerts\Specific\Staff\Modify\Teaching\Account\deleted.html" />
+    <EmbeddedResource Include="Resources\Alerts\Specific\Staff\Modify\Teaching\Account\created.html" />
+    <EmbeddedResource Include="Resources\Alerts\Specific\Staff\Modify\Teaching\Account\updated.html" />
+    <EmbeddedResource Include="Resources\Alerts\Specific\Staff\Modify\Teaching\Account\exists.html" />
+    <EmbeddedResource Include="Resources\Alerts\Specific\Staff\Modify\Teaching\Account\missing.html" />
+    <EmbeddedResource Include="Resources\Templates\Elements\Forms\radiobutton.html" />
+    <EmbeddedResource Include="Resources\Images\Recordlists\addkey.png" />
+    <EmbeddedResource Include="Resources\Images\Recordlists\removekey.png" />
+    <EmbeddedResource Include="Resources\Alerts\Specific\Staff\Modify\Teaching\Department\noresults.html" />
+    <EmbeddedResource Include="Resources\Alerts\Specific\Staff\Modify\Teaching\Department\invalid.html" />
+    <EmbeddedResource Include="Resources\Alerts\Specific\Staff\Modify\Teaching\Department\missing.html" />
+    <EmbeddedResource Include="Resources\Alerts\Specific\Account\Password\success.html" />
+    <EmbeddedResource Include="Resources\Alerts\Specific\Account\Password\length.html" />
+    <EmbeddedResource Include="Resources\Alerts\Specific\Account\Password\match.html" />
+    <EmbeddedResource Include="Resources\Alerts\Specific\Account\Password\old.html" />
+    <EmbeddedResource Include="Resources\Alerts\Specific\Account\Password\missing.html" />
+    <EmbeddedResource Include="Resources\Templates\Specific\Account\password.html" />
+    <EmbeddedResource Include="Resources\Templates\Specific\Account\landing.html" />
+    <EmbeddedResource Include="Resources\Alerts\Specific\Staff\Modify\Teaching\Period\teachingfail.html" />
+    <EmbeddedResource Include="Resources\Alerts\Specific\Staff\Modify\Teaching\Period\classfailed.html" />
+    <EmbeddedResource Include="Resources\Alerts\Specific\Staff\Modify\Teaching\Period\Selection\noclasses.html" />
+    <EmbeddedResource Include="Resources\Images\Recordlists\class.png" />
+    <EmbeddedResource Include="Resources\Alerts\Specific\Staff\Modify\Teaching\Period\Selection\noqualifications.html" />
+    <EmbeddedResource Include="Resources\Images\Recordlists\lightbulb.png" />
+    <EmbeddedResource Include="Resources\Alerts\Specific\Staff\Modify\Teaching\Period\Selection\nosubjects.html" />
+    <EmbeddedResource Include="Resources\Images\Recordlists\subject.png" />
+    <EmbeddedResource Include="Resources\Alerts\Specific\Staff\Modify\Teaching\Period\uniquefailed.html" />
+    <EmbeddedResource Include="Resources\Images\Recordlists\door.png" />
+    <EmbeddedResource Include="Resources\Images\Recordlists\nodoor.png" />
+    <EmbeddedResource Include="Resources\Alerts\Specific\Staff\Modify\Teaching\Period\Selection\success.html" />
+    <EmbeddedResource Include="Resources\Images\Recordlists\yeargroup.png" />
+    <EmbeddedResource Include="Resources\Alerts\Specific\Staff\Modify\Teaching\Period\Selection\noyeargroups.html" />
+    <EmbeddedResource Include="Resources\Templates\Specific\Staff\Modify\Teaching\Timetable\timetabletext.html" />
+    <EmbeddedResource Include="Resources\Javascript\Specific\Staff\Modify\Teaching\Timetable\modify.js" />
+    <EmbeddedResource Include="Resources\Alerts\Specific\Staff\Modify\Teaching\Period\Selection\noselectionstate.html" />
+    <EmbeddedResource Include="Resources\Templates\Specific\Staff\Modify\Teaching\Timetable\selection.html" />
+    <EmbeddedResource Include="Resources\Images\Recordlists\teach.png" />
+    <EmbeddedResource Include="Resources\Alerts\Specific\Staff\Modify\Teaching\Period\busyfailed.html" />
+    <EmbeddedResource Include="Resources\Alerts\Specific\Staff\Modify\Teaching\Timetable\failed.html" />
+    <EmbeddedResource Include="Resources\Alerts\Specific\Staff\Modify\Teaching\Timetable\success.html" />
+    <EmbeddedResource Include="Resources\Images\Search\noentry.png" />
+    <EmbeddedResource Include="Resources\Templates\Specific\Staff\Modify\Teaching\Timetable\current.html" />
+    <EmbeddedResource Include="Resources\Alerts\Specific\Staff\Modify\Teaching\Period\current.html" />
+    <EmbeddedResource Include="Resources\Alerts\Specific\Staff\Landing\Teaching\invalid.html" />
+    <EmbeddedResource Include="Resources\Templates\Specific\Staff\Modify\Teaching\Timetable\teaching.html" />
+    <EmbeddedResource Include="Resources\Templates\Specific\Staff\Modify\Teaching\Timetable\busy.html" />
+    <EmbeddedResource Include="Resources\Templates\Specific\Staff\Modify\Teaching\Timetable\free.html" />
+    <EmbeddedResource Include="Resources\Templates\Specific\Staff\Modify\Teaching\Timetable\unavailable.html" />
+    <EmbeddedResource Include="Resources\Images\Search\job.png" />
+    <EmbeddedResource Include="Resources\Images\Search\teach.png" />
+    <EmbeddedResource Include="Resources\Images\Menus\Menu90\staff.png" />
+    <EmbeddedResource Include="Resources\Images\Menus\Right\staff.png" />
+    <EmbeddedResource Include="Resources\Templates\Elements\Menubar\bar.html" />
+    <EmbeddedResource Include="Resources\Templates\Elements\Menubar\button.html" />
+    <EmbeddedResource Include="Resources\Javascript\forms.js" />
+    <EmbeddedResource Include="Resources\Stylesheets\Ie\Components\hover.htc" />
+    <EmbeddedResource Include="Resources\Templates\Elements\Forms\groupelements.html" />
+    <EmbeddedResource Include="Resources\Templates\Elements\Forms\group.html" />
+    <EmbeddedResource Include="Resources\Templates\Elements\Forms\grouptitle.html" />
+    <EmbeddedResource Include="Resources\Templates\Elements\Forms\panes.html" />
+    <EmbeddedResource Include="Resources\Templates\Elements\Forms\form.html" />
+    <EmbeddedResource Include="Resources\Templates\Elements\Forms\grouptitleimage.html" />
+    <EmbeddedResource Include="Resources\Templates\Elements\Forms\row.html" />
+    <EmbeddedResource Include="Resources\Templates\Elements\Forms\hiddenfield.html" />
+    <EmbeddedResource Include="Resources\Templates\Elements\Forms\textfield.html" />
+    <EmbeddedResource Include="Resources\Templates\Elements\Forms\button.html" />
+    <EmbeddedResource Include="Resources\Alerts\Specific\Staff\Modify\Teaching\Timetable\notimetable.html" />
+    <EmbeddedResource Include="Resources\Alerts\Specific\Staff\Modify\Teaching\Timetable\unknown.html" />
+    <EmbeddedResource Include="Resources\Alerts\Specific\Staff\Modify\Teaching\Timetable\invalidinput.html" />
+    <EmbeddedResource Include="Resources\Templates\Elements\Datagrids\topcontrols.html" />
+    <EmbeddedResource Include="Resources\Templates\Elements\Datagrids\topcontrol.html" />
+    <EmbeddedResource Include="Resources\Templates\Elements\Datagrids\datagrid.html" />
+    <EmbeddedResource Include="Resources\Alerts\Specific\Staff\Modify\Teaching\Entitlement\entitlementbad.html" />
+    <EmbeddedResource Include="Resources\Alerts\Specific\Staff\Modify\Teaching\Entitlement\entitlementsuccess.html" />
+    <EmbeddedResource Include="Resources\Alerts\Specific\Staff\Modify\Teaching\Name\namesuccess.html" />
+    <EmbeddedResource Include="Resources\Alerts\Specific\Staff\Modify\Teaching\Name\nameincomplete.html" />
+    <EmbeddedResource Include="Resources\Alerts\Specific\Staff\Modify\Teaching\Name\nameallblank.html" />
+    <EmbeddedResource Include="Resources\Templates\Specific\Staff\Modify\Teaching\entitlement.html" />
+    <EmbeddedResource Include="Resources\Templates\Specific\Staff\Modify\Teaching\timetable.html" />
+    <EmbeddedResource Include="Resources\Templates\Specific\Staff\Modify\Teaching\account.html" />
+    <EmbeddedResource Include="Resources\Templates\Specific\Staff\Modify\Teaching\department.html" />
+    <EmbeddedResource Include="Resources\Templates\Specific\Staff\Modify\Teaching\name.html" />
+    <EmbeddedResource Include="Resources\Alerts\Specific\Staff\Landing\Nonteaching\unknown.html" />
+    <EmbeddedResource Include="Resources\Alerts\Specific\Staff\Landing\Outside\unknown.html" />
+    <EmbeddedResource Include="Resources\Alerts\Specific\Staff\Landing\Teaching\unknown.html" />
+    <EmbeddedResource Include="Resources\Images\Recordlists\books.png" />
+    <EmbeddedResource Include="Resources\Alerts\Specific\Staff\Landing\Outside\none.html" />
+    <EmbeddedResource Include="Resources\Alerts\Specific\Staff\Landing\Nonteaching\none.html" />
+    <EmbeddedResource Include="Resources\Images\Recordlists\dudette.png" />
+    <EmbeddedResource Include="Resources\Alerts\Specific\Staff\Landing\Teaching\none.html" />
+    <EmbeddedResource Include="Resources\Templates\Specific\Staff\Landing\nonteaching.html" />
+    <EmbeddedResource Include="Resources\Templates\Specific\Staff\Landing\outside.html" />
+    <EmbeddedResource Include="Resources\Templates\Specific\Staff\Landing\teaching.html" />
+    <EmbeddedResource Include="Resources\Templates\Specific\Staff\Landing\landing.html" />
+    <EmbeddedResource Include="Resources\Images\Recordlists\report.png" />
+    <EmbeddedResource Include="Resources\Images\Recordlists\news.png" />
+    <EmbeddedResource Include="Resources\Templates\Specific\Login\updates.html" />
+    <EmbeddedResource Include="Resources\Alerts\Specific\Cover\Slips\Requests\norequests.html" />
+    <EmbeddedResource Include="Resources\Alerts\Specific\Cover\Slips\Requests\nodate.html" />
+    <EmbeddedResource Include="Resources\Javascript\Specific\Cover\slips.js" />
+    <EmbeddedResource Include="Resources\Templates\Specific\Cover\Slips\Standard\Landing\calendar.html" />
+    <EmbeddedResource Include="Resources\Templates\Specific\Cover\Slips\Standard\Landing\requests.html" />
+    <EmbeddedResource Include="Resources\Alerts\Specific\Printable\back.html" />
+    <EmbeddedResource Include="Resources\Alerts\Specific\Printable\printinstructions.html" />
+    <EmbeddedResource Include="Resources\Templates\Specific\Printable\sending.html" />
+    <EmbeddedResource Include="Resources\Templates\printable.html" />
+    <EmbeddedResource Include="Resources\Images\Search\printpaper.png" />
+    <EmbeddedResource Include="Resources\Templates\Specific\Cover\Slips\Printouts\internalcover.html" />
+    <EmbeddedResource Include="Resources\Templates\Specific\Cover\Slips\Printouts\outsidecover.html" />
+    <EmbeddedResource Include="Resources\Templates\Specific\Cover\Slips\Printouts\valid.html" />
+    <EmbeddedResource Include="Resources\Templates\Specific\Cover\Slips\Printouts\badrequest.html" />
+    <EmbeddedResource Include="Resources\Javascript\printable.js" />
+    <EmbeddedResource Include="Resources\Images\Recordlists\clock.png" />
+    <EmbeddedResource Include="Resources\Stylesheets\printable.css" />
+    <EmbeddedResource Include="Resources\Templates\Elements\Coverslips\slip.html" />
+    <EmbeddedResource Include="Resources\Alerts\Specific\Cover\Arrange\Landing\reminder.html" />
+    <EmbeddedResource Include="Resources\Images\Menus\Menu90\printpaper.png" />
+    <EmbeddedResource Include="Resources\Images\Menus\Menu90\covermanagement.png" />
+    <EmbeddedResource Include="Resources\Images\Menus\Right\printpaper.png" />
+    <EmbeddedResource Include="Resources\Images\Search\back.png" />
+    <EmbeddedResource Include="Resources\Alerts\Specific\Cover\Arrange\Selection\Selection\noresults.html" />
+    <EmbeddedResource Include="Resources\Alerts\Specific\Cover\Arrange\Selection\Selection\requestdoesnotexist.html" />
+    <EmbeddedResource Include="Resources\Alerts\Specific\Cover\Arrange\Selection\Selection\badinput.html" />
+    <EmbeddedResource Include="Resources\Alerts\Specific\Cover\Arrange\Selection\Selection\norequestselected.html" />
+    <EmbeddedResource Include="Resources\Images\Search\coverentitlements.png" />
+    <EmbeddedResource Include="Resources\Images\Search\covertype.png" />
+    <EmbeddedResource Include="Resources\Javascript\Specific\Cover\Arrange\Selection\selection.js" />
+    <EmbeddedResource Include="Resources\Images\Recordlists\group.png" />
+    <EmbeddedResource Include="Resources\Images\Search\dudeabsent.png" />
+    <EmbeddedResource Include="Resources\Images\Search\thumbsup.png" />
+    <EmbeddedResource Include="Resources\Images\Recordlists\dudettedoor.png" />
+    <EmbeddedResource Include="Resources\Images\Recordlists\cross.png" />
+    <EmbeddedResource Include="Resources\Images\Recordlists\thumbsup.png" />
+    <EmbeddedResource Include="Resources\Images\Recordlists\dudeabsent.png" />
+    <EmbeddedResource Include="Resources\Alerts\Specific\Cover\Arrange\Selection\Requests\norequests.html" />
+    <EmbeddedResource Include="Resources\Templates\Specific\Cover\Arrange\Selection\selection.html" />
+    <EmbeddedResource Include="Resources\Templates\Specific\Cover\Arrange\Selection\requests.html" />
+    <EmbeddedResource Include="Resources\Templates\Specific\Cover\Arrange\Attendance\periodsinner.html" />
+    <EmbeddedResource Include="Resources\Templates\Elements\Ajax\Xml\element.xml" />
+    <EmbeddedResource Include="Resources\Templates\Elements\Ajax\Xml\collection.xml" />
+    <EmbeddedResource Include="Resources\Alerts\Specific\Cover\Arrange\Attendance\Periods\nostaff.html" />
+    <EmbeddedResource Include="Resources\Images\Search\continue.png" />
+    <EmbeddedResource Include="Resources\Alerts\Ajax\error.html" />
+    <EmbeddedResource Include="Resources\Alerts\Ajax\noresults.html" />
+    <EmbeddedResource Include="Resources\Alerts\Specific\Cover\Arrange\Calendar\noperiods.html" />
+    <EmbeddedResource Include="Resources\Templates\Elements\Recordlists\collection.html" />
+    <EmbeddedResource Include="Resources\Templates\Elements\Recordlists\record.html" />
+    <EmbeddedResource Include="Resources\Templates\Elements\Recordlists\text.html" />
+    <EmbeddedResource Include="Resources\Templates\Elements\Recordlists\side.html" />
+    <EmbeddedResource Include="Resources\Templates\Elements\Recordlists\image.html" />
+    <EmbeddedResource Include="Resources\Images\Recordlists\dude.png" />
+    <EmbeddedResource Include="Resources\Templates\Specific\Cover\Arrange\Attendance\periods.html" />
+    <EmbeddedResource Include="Resources\Alerts\Specific\Cover\Arrange\Calendar\outofrange.html" />
+    <EmbeddedResource Include="Resources\Alerts\Specific\Cover\Arrange\Calendar\invalid.html" />
+    <EmbeddedResource Include="Resources\Alerts\Specific\Login\missingtimetable.html" />
+    <EmbeddedResource Include="Resources\Templates\Specific\Cover\Arrange\Attendance\attendance.html" />
+    <EmbeddedResource Include="Resources\Images\Datagrids\top.png" />
+    <EmbeddedResource Include="Resources\Images\Datagrids\blue.png" />
+    <EmbeddedResource Include="Resources\Images\Datagrids\green.png" />
+    <EmbeddedResource Include="Resources\Images\Datagrids\indigo.png" />
+    <EmbeddedResource Include="Resources\Images\Datagrids\orange.png" />
+    <EmbeddedResource Include="Resources\Images\Datagrids\red.png" />
+    <EmbeddedResource Include="Resources\Images\Datagrids\violet.png" />
+    <EmbeddedResource Include="Resources\Images\Datagrids\yellow.png" />
+    <EmbeddedResource Include="Resources\Templates\Elements\Datagrids\row.html" />
+    <EmbeddedResource Include="Resources\Templates\Elements\Datagrids\cell.html" />
+    <EmbeddedResource Include="Resources\Javascript\ajax.js" />
+    <EmbeddedResource Include="Resources\Templates\Elements\Ajax\element.html" />
+    <EmbeddedResource Include="Resources\Alerts\Specific\Login\expired.html" />
+    <EmbeddedResource Include="Resources\Alerts\Ajax\expiration.html" />
+    <EmbeddedResource Include="Resources\Alerts\Ajax\noschoolexpiration.html" />
+    <EmbeddedResource Include="Resources\Templates\Specific\Cover\Arrange\Calendar\calendar.html" />
+    <EmbeddedResource Include="Resources\Templates\Specific\Cover\Arrange\Landing\arrangestaffcover.html" />
+    <EmbeddedResource Include="Resources\Templates\Specific\Cover\Menu\covermanagement.html" />
+    <EmbeddedResource Include="Resources\Images\Menus\Right\arrange.png" />
+    <EmbeddedResource Include="Resources\Images\Menus\Menu90\arrange.png" />
+    <EmbeddedResource Include="Resources\Images\Menus\Menu90\logout.png" />
+    <EmbeddedResource Include="Resources\Templates\Elements\Menu90\link.html" />
+    <EmbeddedResource Include="Resources\Templates\Specific\Home\home.html" />
+    <EmbeddedResource Include="Resources\Templates\Elements\Topright\standard.html" />
+    <EmbeddedResource Include="Resources\Templates\Elements\Rightmenu\link.html" />
+    <EmbeddedResource Include="Resources\Images\Menus\Right\home.png" />
+    <EmbeddedResource Include="Resources\Images\Menus\Right\logout.png" />
+    <EmbeddedResource Include="Resources\Alerts\Specific\Login\notloggedin.html" />
+    <EmbeddedResource Include="Resources\Alerts\Specific\Login\badlogout.html" />
+    <EmbeddedResource Include="Resources\Alerts\Specific\Login\nonadmin.html" />
+    <EmbeddedResource Include="Resources\Alerts\Specific\Login\duplicate.html" />
+    <EmbeddedResource Include="Resources\Alerts\Specific\Login\missing.html" />
+    <EmbeddedResource Include="Resources\Alerts\Specific\Exception\Resource\raised.html" />
+    <EmbeddedResource Include="Resources\Alerts\Specific\Exception\Resource\requested.html" />
+    <EmbeddedResource Include="Resources\Alerts\Specific\Exception\Resource\technical.html" />
+    <EmbeddedResource Include="Resources\Templates\Specific\Exception\Resource\invalid.html" />
+    <EmbeddedResource Include="Resources\Alerts\Specific\Exception\stacktrace.html" />
+    <EmbeddedResource Include="Resources\Alerts\Specific\Exception\Unhandled\exceptiontype.html" />
+    <EmbeddedResource Include="Resources\Alerts\Specific\Exception\Unhandled\location.html" />
+    <EmbeddedResource Include="Resources\Alerts\Specific\Exception\Unhandled\message.html" />
+    <EmbeddedResource Include="Resources\Templates\Specific\Exception\stacktrace.html" />
+    <EmbeddedResource Include="Resources\Templates\Specific\Exception\Unhandled\unhandled.html" />
+    <EmbeddedResource Include="Resources\Alerts\Specific\Login\unknown.html" />
+    <EmbeddedResource Include="Resources\Images\ietransparency.gif" />
+    <EmbeddedResource Include="Resources\Alerts\Specific\Login\denied.html" />
+    <EmbeddedResource Include="Resources\Alerts\Specific\Login\disabled.html" />
+    <EmbeddedResource Include="Resources\Alerts\Specific\Login\invalid.html" />
+    <EmbeddedResource Include="Resources\Alerts\Specific\Login\loggedout.html" />
+    <EmbeddedResource Include="Resources\Alerts\noscript.html" />
+    <EmbeddedResource Include="Resources\Templates\Specific\Login\assemblyversions.html" />
+    <EmbeddedResource Include="Resources\Templates\quote.html" />
+    <EmbeddedResource Include="Resources\Images\Alerts\Boxes\green.gif" />
+    <EmbeddedResource Include="Resources\Images\Alerts\Boxes\red.gif" />
+    <EmbeddedResource Include="Resources\Images\Alerts\Boxes\yellow.gif" />
+    <EmbeddedResource Include="Resources\Images\Alerts\Flags\green.png" />
+    <EmbeddedResource Include="Resources\Images\Alerts\Flags\red.png" />
+    <EmbeddedResource Include="Resources\Images\Alerts\Flags\yellow.png" />
+    <EmbeddedResource Include="Resources\Images\Search\refresh.png" />
+    <EmbeddedResource Include="Resources\Images\Search\search.png" />
+    <EmbeddedResource Include="Resources\Images\Specific\Login\logo.png" />
+    <EmbeddedResource Include="Resources\Images\Specific\Login\css.png" />
+    <EmbeddedResource Include="Resources\Images\Specific\Login\xhtml.png" />
+    <EmbeddedResource Include="Resources\Images\body.png" />
+    <EmbeddedResource Include="Resources\Images\Ajax\clock.png" />
+    <EmbeddedResource Include="Resources\Images\logo.png" />
+    <EmbeddedResource Include="Resources\Images\Ajax\left.png" />
+    <EmbeddedResource Include="Resources\Images\withmenu.png" />
+    <EmbeddedResource Include="Resources\Images\Ajax\right.png" />
+    <EmbeddedResource Include="Resources\Images\swoosh.jpg" />
+    <EmbeddedResource Include="Resources\Images\Rounding\Plain\bottom.png" />
+    <EmbeddedResource Include="Resources\Images\Rounding\Plain\top.png" />
+    <EmbeddedResource Include="Resources\Images\Rounding\Menu\bottom.png" />
+    <EmbeddedResource Include="Resources\Images\Rounding\Menu\top.png" />
+    <EmbeddedResource Include="Resources\Stylesheets\Specific\login.css" />
+    <EmbeddedResource Include="Resources\Templates\menu.html" />
+    <EmbeddedResource Include="Resources\Templates\plain.html" />
+    <EmbeddedResource Include="Resources\Templates\Specific\Login\about.html" />
+    <EmbeddedResource Include="Resources\Templates\Specific\Login\login.html" />
+    <EmbeddedResource Include="Resources\Templates\Elements\Search\searcharea.html" />
+    <EmbeddedResource Include="Resources\Templates\Elements\Breadcrumbs\trail.html" />
+    <EmbeddedResource Include="Resources\Templates\Elements\Alerts\alert.html" />
+    <EmbeddedResource Include="Resources\Templates\base.html" />
+    <EmbeddedResource Include="Resources\Stylesheets\base.css" />
+    <EmbeddedResource Include="Resources\Stylesheets\Ie\gteie7.css" />
+    <EmbeddedResource Include="Resources\Stylesheets\Ie\base.css" />
+    <EmbeddedResource Include="Resources\Stylesheets\Ie\lteie6.css" />
+    <EmbeddedResource Include="Resources\Stylesheets\quote.css" />
+    <EmbeddedResource Include="Resources\Javascript\Specific\login.js" />
+    <EmbeddedResource Include="Resources\Javascript\base.js" />
+    <EmbeddedResource Include="Resources\Javascript\search.js" />
+    <EmbeddedResource Include="Resources\Javascript\tabs.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Schemas\pleasetakes.application.config.xsd" />
+    <EmbeddedResource Include="Resources\Schemas\pleasetakes.schools.config.xsd" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Sql\Specific\Login\retrieve.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Sql\Specific\Login\usernamecheck.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Sql\Specific\Cover\Arrange\Attendance\Attendance\attendance.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Sql\Specific\Cover\Arrange\Attendance\Attendance\modify.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Sql\Elements\Datagrids\Summary\results.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Sql\Specific\Cover\Arrange\Attendance\Periods\modify.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Sql\Specific\Cover\Arrange\Selection\Requests\list.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Sql\Specific\Cover\Arrange\Selection\Selection\list.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Sql\Specific\Cover\Arrange\Selection\Selection\modify.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Sql\Specific\Cover\Slips\Printouts\daylist.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Sql\Specific\Cover\Slips\selective.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Updates\2010-08-18-1.pdf" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Sql\Specific\Staff\Landing\teaching.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Sql\Specific\Staff\Landing\outside.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Sql\Specific\Staff\Modify\Teaching\existscheck.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Sql\Specific\Staff\Modify\Update\Teaching\name.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Sql\Specific\Staff\Modify\Update\Teaching\entitlement.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Sql\Elements\Datagrids\Timetables\stafftimetable.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Sql\Specific\Staff\Modify\Teaching\period.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Sql\Specific\Staff\Modify\Teaching\Timetable\unavailable.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Sql\Specific\Staff\Modify\Teaching\Timetable\free.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Sql\Specific\Staff\Modify\Teaching\Timetable\busy.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Sql\Specific\Staff\Modify\Teaching\Timetable\Selection\yeargroups.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Sql\Specific\Staff\Modify\Teaching\Timetable\Selection\rooms.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Sql\Specific\Staff\Modify\Teaching\Timetable\teaching.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Sql\Specific\Staff\Modify\Teaching\Timetable\Selection\subjects.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Sql\Specific\Staff\Modify\Teaching\Timetable\Selection\qualifications.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Sql\Specific\Staff\Modify\Teaching\Timetable\Selection\classes.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Updates\2010-09-08-1.pdf" />
+    <EmbeddedResource Include="Resources\Updates\2010-09-08-2.pdf" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Sql\Specific\Account\password.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Updates\2010-09-08-3.pdf" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Sql\Specific\Staff\Modify\Teaching\department.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Sql\Specific\Staff\Modify\Update\Teaching\department.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Updates\2010-09-10-1.pdf" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Sql\Specific\Staff\Modify\Update\Teaching\account.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Sql\Specific\Staff\Modify\Update\Teaching\accountreset.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Sql\Specific\Staff\Add\staff.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Sql\Specific\Staff\Add\timetable.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Updates\2010-09-15-1.pdf" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Updates\2010-09-15-2.pdf" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Resources\Templates\Specific\Staff\Modify\Nonteaching\" />
+    <Folder Include="Resources\Templates\Specific\Staff\Modify\Outside\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

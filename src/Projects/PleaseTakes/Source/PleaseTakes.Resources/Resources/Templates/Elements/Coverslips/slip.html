@@ -1,0 +1,30 @@
+﻿<div class="CoverSlip{$PageBreakBefore}">
+	<table cellpadding="0" cellspacing="0" style=" margin-bottom: 5px;">
+		<tr class="RowHeight">
+			<td class="LeftPadding BottomBorder"><strong>{$Date}</strong></td>
+			<td class="RightPadding BottomBorder Right">{$SchoolName}</td>
+		</tr>
+	</table>
+	<table cellpadding="0" cellspacing="0">
+		<tr class="RowHeight">
+			<td colspan="2" class="LeftPadding BottomBorder">Please arrange to cover this class...</td>
+			<td class="BigCellHeader"><strong>Period</strong></td>
+			<td class="BigCellHeader"><strong>Room</strong></td>
+		</tr>
+		<tr class="RowHeight">
+			<td colspan="2" class="LeftPadding BottomBorder">Covering: <strong>{$CoveringStaffName}{$CoveringStaffDetails}</strong></td>
+			<td rowspan="4" class="BigCell"><span style="position: relative;">{$Period}</span></td>
+			<td rowspan="4" class="BigCell" style="font-size: 36pt;"><span style="position: relative;">{$Room}</span></td>
+		</tr>
+		<tr class="RowHeight">
+			<td colspan="2" class="LeftPadding BottomBorder">For: {$AbsentStaffName}{$AbsentStaffMainRoom}</td>
+		</tr>
+		<tr class="RowHeight">
+			<td colspan="2" class="LeftPadding BottomBorder">Class: <strong>{$CommitmentName}{$CommitmentSubject}</strong></td>
+		</tr>
+		<tr class="RowHeight">
+			<td class="LeftPadding Small">PleaseTakesId: <strong>{$CoverType}{$CoverId}</strong></td>
+			<td class="RightPadding Right"><strong><em>Thanks very much!</em></strong></td>
+		</tr>
+	</table>
+</div>

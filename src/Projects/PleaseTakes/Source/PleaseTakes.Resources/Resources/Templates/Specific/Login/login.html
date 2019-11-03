@@ -1,0 +1,45 @@
+﻿									<h1>PleaseTakes Login</h1>
+									
+									<div class="Text IEFix">
+										Welcome to PleaseTakes!<br />
+										To begin, please enter your username and password into the relevant fields below, and then click <strong>"Login"</strong>.
+										
+										<div class="Text Login">
+											
+											<form id="LoginForm" method="post" action="?path=/login/dologin/">
+											
+												<div class="FormLeftPane">
+													
+													
+														
+														<div class="Row">
+																<span><strong>Username</strong></span>
+																<input type="text" name="Username" id="Username" tabindex="1" />
+																<div style="clear: both;"></div>
+														</div>
+														<div class="Row">
+																<span><strong>Password</strong></span>
+																<input type="password" class="PasswordField" name="Password" id="Password" tabindex="1" />
+																<div style="clear: both;"></div>
+														</div>
+														<div class="Buttons">
+															<input type="reset" value="Clear" class="Button" tabindex="4" onmouseup="focusForm();" />
+															<input type="submit" value="Login" class="Button" tabindex="3" />
+														</div>
+													
+													
+													
+												</div>
+												
+												<div class="FormRightPane">
+													
+													{$Alerts}
+												
+												</div>
+											
+											</form>
+											
+											<div class="Clear"></div>
+											
+										</div>
+									</div>

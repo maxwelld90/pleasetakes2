@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!--
+	
+	PleaseTakes 2
+	XML Schema for pleasetakes.application.config
+	
+	Date last modified: 2010-06-24
+
+-->
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+	<xs:element name="Default">
+		<xs:complexType>
+			<xs:attribute name="schoolID" type="xs:string" />
+			<xs:attribute name="timeout" type="xs:integer" use="required" />
+		</xs:complexType>
+	</xs:element>
+
+	<xs:element name="PleaseTakes.Application">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="Default" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+
+</xs:schema>

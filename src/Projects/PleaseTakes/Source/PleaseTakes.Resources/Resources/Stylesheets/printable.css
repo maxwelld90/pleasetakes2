@@ -1,0 +1,104 @@
+﻿@media screen {
+	
+	div#Printable {
+		display: none;
+	}
+	
+}
+
+@media print {
+	
+	div#Swoosh {
+		display: none;
+	}
+
+	html, body, h1, h2, hr {
+		margin: 0;
+		padding: 0;
+	}
+
+	body {
+		font-family: 'Tahoma', Sans-Serif;
+		line-height: 150%;
+		font-size: 12pt;
+	}
+
+	h1 {
+		font-family: 'Trebuchet MS', Sans-Serif;
+		font-size: 28pt;
+		font-weight: bold;
+		letter-spacing: -2px;
+		margin: 10px 0 10px;
+	}
+
+	h2 {
+		font-family: 'Trebuchet MS', Sans-Serif;
+		font-size: 18pt;
+		font-weight: bold;
+		line-height: 120%;
+		padding: 0 0 8px;
+	}
+
+	hr {
+		border: 2px solid #000;
+		margin: 10px 0 10px;
+	}
+
+	table {
+		width: 100%;
+		border-collapse: collapse;
+		table-layout: fixed;
+		
+	}
+
+	.BreakBefore {
+		page-break-before: always;
+	}
+
+	div.Indented {
+		padding-left: 1em;
+	}
+
+	div.CoverSlip {
+		padding: 12px 0 12px;
+	}
+
+		div.CoverSlip tr.RowHeight {
+			height: 32px;
+		}
+		
+		div.CoverSlip td.LeftPadding {
+			padding-left: 10px;
+		}
+		
+		div.CoverSlip td.RightPadding {
+			padding-right: 10px;
+		}
+		
+		div.CoverSlip .Small {
+			font-size: 8pt;
+		}
+		
+		div.CoverSlip td.BigCellHeader {
+			width: 130px;
+			text-align: center;
+			border-bottom: 1px solid #000;
+			border-left: 1px solid #000;
+		}
+		
+		div.CoverSlip td.BigCell {
+			width: 130px; 
+			font-size: 72pt;
+			text-align: center;
+			border-left: 1px solid #000;
+		}
+		
+		div.CoverSlip td.BottomBorder {
+			border-bottom: 1px solid #000;
+		}
+		
+		div.CoverSlip td.Right {
+			text-align: right;
+		}	
+	
+}

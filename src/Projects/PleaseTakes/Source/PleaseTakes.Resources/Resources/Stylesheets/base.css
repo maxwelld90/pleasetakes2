@@ -1,0 +1,840 @@
+html, body {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background: url('?path=/resources/images/body.png') repeat-x #374866;
+	color: #0F131C;
+	text-align: center;
+	font-family: 'Tahoma', Sans-Serif;
+	font-size: 12pt;
+}
+
+ul, img, h1, table, form {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+table {
+	width: 100%;
+	border-collapse: collapse;
+	table-layout: fixed;
+	border: 1px solid #374866;
+}
+
+hr {
+	border: 1px solid #374866;
+}
+
+p {
+	margin: .5em 0 .5em;
+}
+	
+	p.Plain {
+		margin: 0;	
+	}
+
+h1 {
+	font-family: 'Trebuchet MS', Sans-Serif;
+	font-size: 22pt;
+	font-weight: bold;
+	letter-spacing: -1px;
+	}
+
+ul.SimpleList {
+	margin: 0;
+	padding: 5px 40px 5px 40px;
+	list-style-type: square;
+	font-weight: bold;
+	line-height: 250%;
+}
+
+a {
+	color: #384D6D;
+	cursor: pointer;
+	text-decoration: none;
+}
+	
+	a:hover {
+		color: #933313;
+	}
+
+input {
+	font-family: 'Trebuchet MS', Sans-Serif;
+	font-size: 16pt;
+	color: #206180;
+}
+	
+	input.Italic {
+		font-style: italic;
+	}
+
+input.PasswordField {
+	font-family: 'Trebuchet MS', Sans-Serif;
+	font-size: 16pt;
+	color: #BB2F00;
+}
+
+input.Button {
+	font-family: 'Trebuchet MS', Sans-Serif;
+	font-size: 16pt;
+	font-weight: bold;
+	color: #000;
+}
+
+.Hidden {
+	display: none;
+}
+
+.Monospaced {
+	font-family: Consolas, monospace;
+}
+
+.Nowhere {
+	cursor: default;
+}
+
+div.Clear {
+	clear: both;
+}
+
+.TopSpace {
+	margin-top: 10px;
+}
+
+
+div#Swoosh {
+	width: 1000px;
+	min-height: 150px;
+	height: auto !important;
+	height: 150px;
+	margin: 0 auto 0 auto;
+	background: url('?path=/resources/images/swoosh.jpg') no-repeat top;
+}
+
+div#MainContainer {
+	position: relative;
+	width: 900px;
+	margin: 0 auto 0 auto;
+	text-align: left;
+}
+
+/* Header Area */
+
+div#Header {
+	position: relative;
+	height: 150px;
+}
+
+	div#Header div.Logo {
+		position: relative;
+		top: 34px;
+		width: 328px;
+		height: 71px;
+	}
+	
+	div#Header div.SchoolName {
+		position: relative;
+		float: right;
+		top: 17px;
+		font-family: 'Trebuchet MS', Sans-Serif;
+		font-size: 18pt;
+		color: #FFF;
+		letter-spacing: -1px;
+	}
+	
+	div#Header div.TopRight {
+		position: absolute;
+		top: 15px;
+		height: 25px;
+		right: 0;
+		font-size: 10pt;
+		line-height: 23px;
+		color: #FFF;
+		text-align: right;
+	}
+		
+		div#Header div.TopRight strong.SchoolID {
+			color: #C4FE74;	
+		}
+	
+		div#Header div.TopRight strong.NonTeaching {
+			color: #FFB482;
+		}
+		
+		div#Header div.TopRight span.Teaching {
+			color: #A6CADB;
+		}
+	
+		div#Header div.TopRight ul {
+			list-style-type: none;
+		}
+			
+			div#Header div.TopRight ul li {
+				display: inline;
+			}
+	
+		div#Header div.TopRight a {
+			color: #DFE5EC;
+		}
+		
+			div#Header div.TopRight a:hover {
+				color: #FCCDC1;
+				text-decoration: underline;
+			}
+	
+	div#AjaxIndicator {
+		position: absolute;
+		top: 154px;
+		right: 0;
+		height: 26px;
+		display: none;
+	}
+	
+		div#AjaxIndicator span.Side {
+			display: block;
+			float: left;
+			width: 4px;
+			height: 100%;
+		}
+		
+		div#AjaxIndicator span.Left {
+			background: url('?path=/resources/images/ajax/left.png') no-repeat;
+		}
+		
+		div#AjaxIndicator span.Right {
+			background: url('?path=/resources/images/ajax/right.png') no-repeat;
+		}
+		
+		div#AjaxIndicator div {
+			float: left;
+			width: auto;
+			height: 100%;
+			padding: 0 2px 0 24px;
+			font-size: 11pt;
+			font-weight: bold;
+			line-height: 23px;
+			background: url('?path=/resources/images/ajax/clock.png') no-repeat #CDD6E7;
+		}
+
+/* Tabs */
+
+div#Tabs {
+	width: 100%;
+	height: 34px;
+}
+
+	div#Tabs ul {
+		list-style-type: none;
+		margin-left: 6px;
+	}
+	
+		div#Tabs ul li {
+			display: inline;
+		}
+		
+			div#Tabs ul li a {
+				float: left;
+				font-family: 'Trebuchet MS', Sans-Serif;
+				font-size: 14pt;
+				font-weight: bold;
+				margin-right: 6px;
+				padding: 0 6px 0 6px;
+				line-height: 34px;
+				text-decoration: none;
+			}
+			
+			div#Tabs ul li a {
+				color: #A4B5D0;
+			}
+			
+			div#Tabs ul li a:hover {
+				color: #4A6693;
+			}
+			
+			div#Tabs ul li a.Selected {
+				color: #0F131C;
+				background: #CCD6E6;
+			}
+
+/* Main Content Container Divs and Rounding */
+
+div.MainRounding {
+	height: 7px;
+	font-size: 1pt;
+}
+
+	div.MainRounding#Top {
+		background: url('?path=/resources/images/rounding/plain/top.png') no-repeat;
+	}
+	
+		div.MainRounding#Top.Menu {
+			background: url('?path=/resources/images/rounding/menu/top.png') no-repeat;
+		}
+	
+	div.MainRounding#Bottom {
+		margin-bottom: 15px;
+		background: url('?path=/resources/images/rounding/plain/bottom.png') no-repeat;
+	}
+	
+		div.MainRounding#Bottom.Menu {
+			background: url('?path=/resources/images/rounding/menu/bottom.png') no-repeat;
+		}
+
+div#Main {
+	padding: 0 11px 4px 12px;
+	background: #CDD6E7;
+}
+	
+	div#Main.Menu {
+		background: url('?path=/resources/images/withmenu.png') repeat-y;
+		overflow: hidden;
+		width: 100%;
+	}
+	
+	div#Main.Menu div.LeftPane {
+		float: left;
+		height: 100%;
+		width: 806px;
+	}
+	
+	div#Main.Menu div.RightPane {
+		float: right;
+		height: 100%;
+		width: 48px;
+		margin: 0 23px -4px;
+		overflow: hidden;
+	}
+	
+		div#Main.Menu div.RightPane li {
+			display: block;
+			width: 100%;
+			height: 48px;
+			margin-bottom: 4px;
+		}
+		
+		div#Main.Menu div.RightPane li a {
+			display: block;
+			width: 100%;
+			height: 100%;
+		}
+		
+		div#Main.Menu div.RightPane li a strong {
+			display: none;
+		}
+
+div.TabContent.Hide {
+	display: none;
+}
+	
+	div.Text {
+		padding: 4px 12px 4px 12px;
+		line-height: 165%;
+	}
+
+/* Breadcrumb Trail */
+
+ul.BreadcrumbTrail li {
+	display: inline;
+	font-size: 12pt;
+}
+
+	ul.BreadcrumbTrail li a:hover {
+		text-decoration: underline;
+	}
+
+/* 90px Menu */
+
+ul.Menu90 {
+	list-style-type: none;
+}
+
+	ul.Menu90 li {
+		display: block;
+		position: relative;
+		margin-top: 15px;
+		height: 90px;
+		width: 100%;
+	}
+	
+		ul.Menu90 li a span.img {
+			display: block;
+			width: 90px;
+			height: 100%;
+		}
+		
+		ul.Menu90 li a span.Title {
+			display: block;
+			position: absolute;
+			top: 8px;
+			left: 100px;
+			font-family: 'Trebuchet MS', Sans-Serif;
+			font-size: 18pt;
+		}
+		
+		ul.Menu90 li a span.Description {
+			display: block;
+			position: absolute;
+			left: 110px;
+			top: 37px;
+			line-height: 140%;
+		}
+
+/* Alert boxes */
+
+div.Alert {
+	padding: 10px 10px 10px 52px;
+	margin-bottom: 10px;
+	line-height: 32px;
+}
+
+	div.Alert h4 {
+		padding: 0;
+		margin: 0;
+	}
+
+	div.Alert div {
+		position: relative;
+		float: right;
+		width: 12px;
+		height: 12px;
+	}
+	
+		div.Alert div a {
+			display: block;
+			width: 100%;
+			height: 100%;
+		}
+	
+	div.Alert.Blue {
+		padding-left: 10px;
+		background: #B0BED9;
+	}
+
+	div.Alert.Red {
+		position: relative;
+		background: url('?path=/resources/images/alerts/flags/red.png') no-repeat 10px 10px #FDB0A6;
+		color: #3D0901;
+	}
+	
+		div.Alert.Red div {
+			background: url('?path=/resources/images/alerts/boxes/red.gif') no-repeat;
+		}
+	
+	div.Alert.Yellow {
+		background: url('?path=/resources/images/alerts/flags/yellow.png') no-repeat 10px 10px #E9CF78;
+		color: #282106;
+	}
+	
+		div.Alert.Yellow div {
+			background: url('?path=/resources/images/alerts/boxes/yellow.gif') no-repeat;
+		}
+	
+	div.Alert.Green {
+		background: url('?path=/resources/images/alerts/flags/green.png') no-repeat 10px 10px #92E379;
+		color: #0E2307;
+	}
+	
+		div.Alert.Green div {
+			background: url('?path=/resources/images/alerts/boxes/green.gif') no-repeat;
+		}
+
+/* Record List */
+
+ul.RecordList li {
+	list-style-type: none;
+	margin-bottom: 5px;
+}
+
+	ul.RecordList li a {
+		display: block;
+		padding: 5px;
+		overflow: hidden;
+		background: #B0BED9;
+	}
+	
+		ul.RecordList li a:hover {
+			color: #253347;
+			background: #899EC7;
+		}
+		
+		ul.RecordList li a.Red {
+			color: #83250E;
+			background: #FC9D8F;
+		}
+		
+			ul.RecordList li a.Red:hover {
+				color: #83250E;
+				background: #FC7A67;
+			}
+		
+		ul.RecordList li a.Yellow {
+			color: #282106;
+			background: #FDD98E;
+		}
+		
+			ul.RecordList li a.Yellow:hover {
+				color: #282106;
+				background: #FCC552;
+			}
+		
+		ul.RecordList li a.Green {
+			color: #0D6F0B;
+			background: #9DE296;
+		}
+		
+			ul.RecordList li a.Green:hover {
+				color: #0B5B09;
+				background: #6FD363;
+			}
+	
+		ul.RecordList li a img.Left {
+			display: block;
+			float: left;
+		}
+		
+		ul.RecordList li a img.Right {
+			display: block;
+			float: right;
+		}
+		
+		ul.RecordList li a span.Left {
+			float: left;
+			margin-left: 7px;
+		}
+		
+		ul.RecordList li a span.Right {
+			float: right;
+			margin-right: 7px;
+			text-align: right;
+		}
+		
+		ul.RecordList li a span span {
+			display: block;
+			font-size: 10pt;
+			line-height: 160%;
+		}
+
+/* Search bar */
+
+div.SearchBar {
+	height: 33px;
+}
+
+	div.SearchBar input {
+		float: left;
+		height: auto;
+		margin: 0px 0 -5px 0;
+	}
+
+	div.SearchBar a {
+		float: left;
+		position: relative;
+		top: 4px;
+		margin-left: 10px;
+	}
+	
+	div.SearchBar span {
+		float: right;
+		line-height: 33px;
+	}
+
+/* Datagrids */
+
+table th {
+	width: auto;
+	height: 60px;
+	font-family: 'Trebuchet MS', Sans-Serif;
+	font-size: 16pt;
+	font-weight: bold;
+	text-align: center;
+	line-height: 120%;
+	border: 1px solid #374866;
+	background: #7C98C0;
+}
+	
+	table th.Small {
+		font-size: 11pt;
+	}
+	
+	table th em {
+		display: block;
+	}
+	
+	table th a {
+		color: #0F131C;
+	}
+	
+		table th a:hover {
+			color: #3C4D6F;
+			text-decoration: underline;
+		}
+
+table td {
+	width: auto;
+	height: 60px;
+	font-size: 12pt;
+	font-weight: bold;
+	text-align: center;
+	border: 1px solid #374866;
+	background: #B6C5DC;
+}
+	
+	table td a {
+		display: block;
+		padding: 10px 0 10px;
+	}
+
+	table td.Span {
+		line-height: 110%;
+	}
+	
+		table td.Span span {
+			display: block;
+			font-size: 8pt;
+			font-weight: normal;
+		}
+	
+	table td.Large {
+		font-family: 'Trebuchet MS', Sans-Serif;
+		font-size: 20pt;
+	}
+	
+	table td.Small {
+		font-size: 10pt;
+	}
+	
+	table td.Red {
+		color: #2B0000;
+		background: url('?path=/resources/images/datagrids/red.png') repeat-x #FF9191;
+	}
+	
+		table td.Red a {
+			color: #2B0000;
+		}
+	
+			table td.Red a:hover {
+				color: #A40000;
+			}
+	
+	table td.Orange {
+		color: #2B1500;
+		background: url('?path=/resources/images/datagrids/orange.png') repeat-x #FFBF91;
+	}
+	
+		table td.Orange a {
+			color: #2B1500;
+		}
+	
+			table td.Orange a:hover {
+				color: #A35201;
+			}
+	
+	table td.Yellow {
+		color: #2B2700;
+		background: url('?path=/resources/images/datagrids/yellow.png') repeat-x #FFE991;
+	}
+	
+		table td.Yellow a {
+			color: #2B2700;
+		}
+	
+			table td.Yellow a:hover {
+				color: #A27D02;
+			}
+	
+	table td.Green {
+		color: #012B00;
+		background: url('?path=/resources/images/datagrids/green.png') repeat-x #BFFF91;
+	}
+	
+		table td.Green a {
+			color: #012B00;
+		}
+	
+			table td.Green a:hover {
+				color: #0BA003;
+			}
+	
+	table td.Blue {
+		color: #00202B;
+		background: url('?path=/resources/images/datagrids/blue.png') repeat-x #91C8FF;
+	}
+	
+		table td.Blue a {
+			color: #00202B;
+		}
+	
+			table td.Blue a:hover {
+				color: #046D9F;
+			}
+	
+	table td.Indigo {
+		color: #14002B;
+		background: url('?path=/resources/images/datagrids/indigo.png') repeat-x #919BFF;
+	}
+	
+		table td.Indigo a {
+			color: #14002B;
+		}
+	
+			table td.Indigo a:hover {
+				color: #59049F;
+			}
+	
+	table td.Violet {
+		color: #2B001F;
+		background: url('?path=/resources/images/datagrids/violet.png') repeat-x #C591FF;
+	}
+	
+		table td.Violet a {
+			color: #2B001F;
+		}
+	
+			table td.Violet a:hover {
+				color: #9F0465;
+			}
+
+
+div.DataGrid .Top {
+	width: 100%;
+	height: 40px;
+	text-align: center;
+	position: relative;
+	line-height: 40px;
+	background: url('?path=/resources/images/datagrids/top.png') no-repeat;
+}
+	
+	div.DataGrid .Top .Left {
+		display: inline;
+		float: left;
+		position: relative;
+		z-index: 1;
+		margin-left: 10px;
+	}
+	
+	div.DataGrid .Top .Centre {
+	position: absolute;
+	z-index: 0;
+	left: 0;
+	width: 100%;
+		font-family: 'Trebuchet MS', Sans-Serif;
+		font-size: 16pt;
+		font-weight: bold;
+	}
+	
+	div.DataGrid .Top .Right {
+		display: inline;
+		position: relative;
+		z-index: 1;
+		float: right;
+		margin-right: 10px;
+	}
+
+/* Form basics */
+
+form div.BasicPaneContainer {
+	overflow: hidden;
+}
+
+form div.Group {
+	padding-bottom: 10px;
+}
+
+form div.Group div.Elements {
+	padding: 10px 10px 0 37px;
+	height: 1%;
+	background: #C4CCE3;
+	overflow: hidden;
+}
+
+form label {
+	display: block;
+	height: 25px;
+	padding: 5px;
+	background: #B0BED9;
+}
+	
+	form label.Green {
+		color: #0D6F0B;
+		background: #9DE296;
+	}
+	
+		form label:hover {
+			color: #253347;
+			background: #899EC7;
+		}
+		
+		form label.Green:hover {
+			color: #0B5109;
+			background: #5FCF52;
+		}
+	
+	form label img {
+		display: block;
+		float: left;
+	}
+	
+	form label span {
+		float: left;
+		margin-left: 7px;
+		line-height: 25px;
+	}
+	
+	form label input {
+		position: absolute;
+		left: -999em;
+	}
+
+form div.FormLeftPane {
+	float: left;
+	width: 55%;
+}
+
+form div.FormRightPane {
+	float: right;
+	width: 45%;
+	margin-bottom: -10px;
+}
+	
+	div.FormRightPane div.Contents {
+		padding: 0 0 10px 10px;
+	}
+
+form div.Row {
+	margin-bottom: 10px;
+}
+	
+	form div.Row span {
+		float: left;
+		display: block;
+		position: relative;
+		height: 33px;
+		top: 3px;
+	}
+	
+	form div.Row input {
+		float: right;
+		width: 240px;
+	}
+	
+	form div.Row span.NoInput {
+		float: right;
+		height: 31px;
+	}
+
+form div.Buttons {
+	width: 100%;
+	text-align: right;
+}
+
+
+
+
+form label.Radio {
+	display: inline;
+	margin-left: 5px;
+	padding: 5px;
+}

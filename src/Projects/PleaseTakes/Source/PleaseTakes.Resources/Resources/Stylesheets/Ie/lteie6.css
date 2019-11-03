@@ -1,0 +1,59 @@
+* html img, * html .png{
+position:relative;
+behavior: expression((this.runtimeStyle.behavior="none")&&(this.pngSet?this.pngSet=true:(this.nodeName == "IMG" && this.src.toLowerCase().indexOf('.png')>-1?(this.runtimeStyle.backgroundImage = "none",
+this.runtimeStyle.filter = "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='" + this.src + "', sizingMethod='image')",
+this.src = "?path=/resources/images/ietransparency.gif"):(this.origBg = this.origBg? this.origBg :this.currentStyle.backgroundImage.toString().replace('url("','').replace('")',''),
+this.runtimeStyle.filter = "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='" + this.origBg + "', sizingMethod='crop')",
+this.runtimeStyle.backgroundImage = "none")),this.pngSet=true)
+);
+}
+
+body {
+	behavior: url('?path=/resources/stylesheets/ie/components/hover.htc');
+}
+
+/* Header Area */
+
+div#AjaxIndicator span.Left {
+	background: none;
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='?path=/resources/images/ajax/left.png', sizingMethod='scale');
+}
+
+div#AjaxIndicator span.Right {
+	background: none;
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='?path=/resources/images/ajax/right.png', sizingMethod='scale');
+}
+
+div#AjaxIndicator div {
+	background: #CDD6E7;
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='?path=/resources/images/ajax/clock.png', sizingMethod='crop');
+}
+
+/* Main Content Container Divs and Rounding */
+
+div.MainRounding#Top {
+	background: none;
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='?path=/resources/images/rounding/plain/top.png', sizingMethod='scale');
+}
+
+	div.MainRounding#Top.Menu {
+		background: none;
+		filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='?path=/resources/images/rounding/menu/top.png', sizingMethod='scale');
+	}
+
+div.MainRounding#Bottom {
+	background: none;
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='?path=/resources/images/rounding/plain/bottom.png', sizingMethod='scale');
+}
+
+	div.MainRounding#Bottom.Menu {
+		background: none;
+		filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='?path=/resources/images/rounding/menu/bottom.png', sizingMethod='scale');
+	}
+
+/* Record List */
+
+ul.RecordList li a {
+	height: 100%;
+	overflow: hidden;
+}

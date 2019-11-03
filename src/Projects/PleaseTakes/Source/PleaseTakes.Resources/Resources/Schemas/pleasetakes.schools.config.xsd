@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!--
+	
+	PleaseTakes 2
+	XML Schema for pleasetakes.schools.config
+	
+	Date last modified: 2010-06-24
+
+-->
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+	<!-- Root -->
+
+	<xs:element name="PleaseTakes.Schools">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="School" minOccurs="0" maxOccurs="unbounded" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+
+	<!-- School -->
+
+	<xs:element name="School">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="PleaseTakes.Application" />
+				<xs:element ref="NonTeachingAccounts" />
+				<xs:element ref="Timetabling" />
+			</xs:sequence>
+
+			<xs:attribute name="id" type="xs:string" use="required" />
+		</xs:complexType>
+	</xs:element>
+
+	<!-- Application-wide -->
+
+	<xs:element name="PleaseTakes.Application">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="Database" />
+				<xs:element ref="Session" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+
+	<!-- Database -->
+
+	<xs:element name="Database">
+		<xs:complexType>
+			<xs:attribute name="connectionString" type="xs:string" use="required" />
+		</xs:complexType>
+	</xs:element>
+
+	<!-- Session -->
+
+	<xs:element name="Session">
+		<xs:complexType>
+			<xs:attribute name="timeout" type="xs:integer" />
+		</xs:complexType>
+	</xs:element>
+
+	<!-- Non-teaching accounts -->
+
+	<xs:element name="NonTeachingAccounts">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="Account" minOccurs="0" maxOccurs="unbounded" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+
+	<xs:element name="Account">
+		<xs:complexType>
+			<xs:attribute name="password" type="xs:string" use="required" />
+			<xs:attribute name="forename" type="xs:string" use="required" />
+			<xs:attribute name="surname" type="xs:string" use="required" />
+			<xs:attribute name="active" type="xs:boolean" use="required" />
+			<xs:attribute name="username" type="xs:string" use="required" />
+		</xs:complexType>
+	</xs:element>
+
+	<!-- Timetabling -->
+
+	<xs:element name="Timetabling">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="SessionDetails" />
+				<xs:element ref="Layout" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+
+	<!-- Session Details -->
+
+	<xs:element name="SessionDetails">
+		<xs:complexType>
+			<xs:attribute name="useCurrent" type="xs:boolean" use="required" />
+			<xs:attribute name="startDate" type="xs:date" use="required" />
+			<xs:attribute name="endDate" type="xs:date" use="required" />
+		</xs:complexType>
+	</xs:element>
+
+	<!-- Timetable Layout -->
+
+	<xs:element name="Layout">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="Day" minOccurs="0" maxOccurs="unbounded" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+
+	<xs:element name="Day">
+		<xs:complexType>
+			<xs:attribute name="weekNo" type="xs:integer" use="required" />
+			<xs:attribute name="dayNo" type="xs:integer" use="required" />
+			<xs:attribute name="periods" type="xs:integer" use="required" />
+		</xs:complexType>
+	</xs:element>
+
+</xs:schema>

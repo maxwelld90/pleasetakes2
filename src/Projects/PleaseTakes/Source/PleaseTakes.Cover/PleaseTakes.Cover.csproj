@@ -1,0 +1,105 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{0FAE1B14-6311-4B7B-9BC4-646A4C8AE6A7}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>PleaseTakes</RootNamespace>
+    <AssemblyName>PleaseTakes.Cover</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ApplicationIcon>AssemblyIcon.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Source\AssemblyDetails.cs" />
+    <Compile Include="Source\Handlers\Arrange\Attendance\Ajax\Attendance\Modify.cs" />
+    <Compile Include="Source\Handlers\Arrange\Attendance\Ajax\Attendance\Status.cs" />
+    <Compile Include="Source\Handlers\Arrange\Attendance\Ajax\Attendance\Standard.cs" />
+    <Compile Include="Source\Handlers\Arrange\Attendance\Ajax\Periods\Modify.cs" />
+    <Compile Include="Source\Handlers\Arrange\Attendance\Ajax\Periods\Standard.cs" />
+    <Compile Include="Source\Handlers\Arrange\Attendance\Ajax\Periods\Status.cs" />
+    <Compile Include="Source\Handlers\Arrange\Attendance\Standard.cs" />
+    <Compile Include="Source\Handlers\Arrange\Calendar\Ajax\Standard.cs" />
+    <Compile Include="Source\Handlers\Arrange\Calendar\Standard.cs" />
+    <Compile Include="Source\Handlers\Arrange\Landing.cs" />
+    <Compile Include="Source\Records\RequestBase.cs" />
+    <Compile Include="Source\Records\Selection.cs" />
+    <Compile Include="Source\Records\CoverSelected.cs" />
+    <Compile Include="Source\Records\NoCoverSelected.cs" />
+    <Compile Include="Source\Records\NoCoverRequired.cs" />
+    <Compile Include="Source\Records\RecordBase.cs" />
+    <Compile Include="Source\Handlers\Arrange\Selection\Ajax\Requests\Status.cs" />
+    <Compile Include="Source\Handlers\Arrange\Selection\Ajax\Requests\Standard.cs" />
+    <Compile Include="Source\Handlers\Arrange\Selection\Ajax\Selection\Modify.cs" />
+    <Compile Include="Source\Handlers\Arrange\Selection\Ajax\Selection\Status.cs" />
+    <Compile Include="Source\Handlers\Arrange\Selection\Ajax\Selection\Standard.cs" />
+    <Compile Include="Source\Handlers\Arrange\Selection\Standard.cs" />
+    <Compile Include="Source\Handlers\Menu\Handler.cs" />
+    <Compile Include="Source\Slips\Ajax\Landing\Calendar.cs" />
+    <Compile Include="Source\Slips\Ajax\Landing\IsValid.cs" />
+    <Compile Include="Source\Slips\Ajax\Landing\Requests.cs" />
+    <Compile Include="Source\Slips\Ajax\Redirector.cs" />
+    <Compile Include="Source\Slips\Landing\Standard.cs" />
+    <Compile Include="Source\Slips\Printouts\Day.cs" />
+    <Compile Include="Source\Slips\Redirector.cs" />
+    <Compile Include="Source\Redirector.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="AssemblyIcon.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\PleaseTakes.Core\PleaseTakes.Core.csproj">
+      <Project>{CB969F21-E409-4A21-B664-504B5F93D8CA}</Project>
+      <Name>PleaseTakes.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\PleaseTakes.UserManagement\PleaseTakes.UserManagement.csproj">
+      <Project>{95960DBD-B8A6-4C7C-8DF6-E0DA9A6669B8}</Project>
+      <Name>PleaseTakes.UserManagement</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

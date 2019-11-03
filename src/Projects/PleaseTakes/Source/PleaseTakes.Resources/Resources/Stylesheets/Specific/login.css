@@ -1,0 +1,67 @@
+/*
+
+	PleaseTakes 2
+	Specific Login Styles
+	Copyright (C) David Maxwell 2010
+    
+	Stylesheet served on {$ServedTimestamp}
+
+*/
+
+div.IEFix {
+	position: relative;
+	height: 100%;
+}
+
+div.Login {
+	padding-top: 20px;
+}
+
+form div.FormLeftPane {
+	width: 410px;
+}
+
+form div.FormRightPane {
+	width: 410px;
+}
+
+form div.Row span {
+	width: 90px;
+}
+
+form div.Row input {
+	width: 309px;
+}
+
+div.AboutLeftPane {
+	float: left;
+	width: 560px;
+}
+
+div.AboutRightPane {
+	float: right;
+	width: 260px;
+	background: #BCC8DE;
+}
+
+	div.AboutRightPane div.Text {
+		position: relative;
+		padding: 0 10px 10px 10px;
+	}
+	
+	div#Version {
+		position: absolute;
+		top: -37px;
+		left: 20px;
+		_left: 10px;
+		color: #374766;
+	}
+	
+	div#AssemblyBuilds {
+		text-align: right;
+	}
+	
+	div#W3CImages {
+		padding-top: 10px;
+		text-align: right;
+	}

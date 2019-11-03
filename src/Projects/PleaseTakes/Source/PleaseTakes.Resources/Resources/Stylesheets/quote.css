@@ -1,0 +1,37 @@
+html, body {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	width: 90%;
+	margin: 0 auto 0 auto;
+	text-align: center;
+	font-family: Georgia, 'Times New Roman', Serif;
+	color: #D6DEEB;
+	background: #192231;
+}
+
+div#quote {
+	margin-top: 15%;
+	padding: 20px;
+	font-size: 36pt;
+	text-align: left;
+	letter-spacing: 1.5pt;
+	line-height: 140%;
+	background: #283751;
+}
+
+div#btm {
+	margin-top: .6em;
+	padding-right: .6em;
+	font-size: 24pt;
+	text-align: right;
+	line-height: 110%;
+	color: #B7C5DB;
+}
+	
+	div#btm span {
+		display: block;
+		font-size: 14pt;
+	}

@@ -1,0 +1,42 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<!--
+
+	PleaseTakes 2
+	Copyright (C) David Maxwell 2010
+    
+	Page served on {$ServedTimestamp}
+
+-->
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+	<head>
+{$HeaderTags}
+	</head>
+	
+	<body>
+		
+		<div id="Swoosh">
+			<div id="MainContainer">
+				<div id="Header">
+					<div class="Logo"><img src="?path=/resources/images/logo.png" alt="PleaseTakes logo" style="width: 328px; height: 71px;" /></div>
+					{$SchoolName}
+{$TopRight}
+					<div id="AjaxIndicator">
+						<span class="Side Left"></span>
+						<div>Loading content...</div>
+						<span class="Side Right"></span>
+					</div>
+				</div>
+				
+				<div>
+					{$PageContent}
+				</div>
+			</div>
+		</div>
+		{$Printable}
+		
+	</body>
+
+</html>

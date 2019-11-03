@@ -1,0 +1,21 @@
+ul.Menu90 {
+	margin-top: -1px;
+}
+
+div#Main.Menu div.RightPane ul {
+	margin-bottom: -4px;
+}
+
+div#Main.Menu div.RightPane li {
+	margin-bottom: 1px;
+}
+
+ul.RecordList li {
+	margin-bottom: 2px;
+}
+
+
+
+form label.Radio {
+	padding: 5px 1px 5px 5px;
+}

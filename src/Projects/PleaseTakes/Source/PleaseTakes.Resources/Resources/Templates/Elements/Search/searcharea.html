@@ -1,0 +1,19 @@
+﻿<div id="SearchContainer{$Id}">
+										
+											<div class="SearchBar">
+												<input type="hidden" id="AjaxUrl{$Id}" value="{$AjaxUrl}" />
+												<input type="hidden" id="AjaxStatusUrl{$Id}" value="{$AjaxStatusUrl}" />
+												<input type="hidden" id="AjaxGetSourcePath{$Id}" value="{$AjaxGetSourcePath}" />
+												{$CustomFields}
+												<input type="text" id="SearchInput{$Id}" onkeyup="checkForKeyPress(event, '{$Id}');" />
+												{$Buttons}
+												<span id="SearchStatus{$Id}"></span>
+											</div>
+											
+											<hr />
+											
+											<div id="SearchResults{$Id}">
+												
+											</div>
+										
+										</div>
