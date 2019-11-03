@@ -28,6 +28,9 @@ If you want to use this code, or simply talk to me about it, please contact me f
 ## The Database
 Check out the database schema! There's a huge PNG file stored in the repository root that demonstrates all the different tables and relationships that I came up. It's a monster, and I was very proud of it at the time. There's way more tables than there needs to be because I had grander plans for this software other than PleaseTakes. These never came to fruition, however. A shame. Could have been fun and successful.
 
+## Use of Icons
+This project makes use of a set of icons that I purchased for roughly £60 back in early 2008. I have my receipt for this transaction (still); the website I purchased them from was [http://www.guiicons.com](http://www.guiicons.com). However, it is no longer active as of 2019. If anyone has any issue with me hosting some of these icons, get in touch with me and I'll take them down. It's only a super small subset anyway, and they are low-res PNG files -- I doubt it'll cause much of a problem.
+
 ## Issues
 There's plenty of things that I would do differently nowadays with the knowledge I now possess. One of the big issues for me that this software didn't really address was security; passwords were stored as plaintext, for example. I hadn't yet been taught the importance of password salting, something that I was taught in my third year. Or the importance of HTTPS; but that is deployment-specific. I could have made use of the .NET web frameworks a lot more, but then again, I wanted the challenge of working from a clean slate.
 
