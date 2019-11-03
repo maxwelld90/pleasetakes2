@@ -1,0 +1,7 @@
+bin/
+src/
+debug/
+Thumbs.db
+.DS_Store
+.suo
+.dll
